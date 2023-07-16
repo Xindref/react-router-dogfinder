@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: rgb(255, 191, 118);
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    padding: 0px;
+    margin-top: 5px;
+    list-style-type: none;
+    display: none;
+    z-index: 1;
+    /* Ensure the dropdown appears above other elements */
+    height: auto;
+}
+
+.nav-item:hover .sub-menu {
+    display: block;
+    width: 100px;
+}
+
+.sub-menu li {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-menu li span:hover {
+    background-color: #777;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-menu li span {
+    display: block;
+}
